@@ -1,2 +1,1 @@
-# tsoa
-True Size Of Anything
+# The True Size Of Things
