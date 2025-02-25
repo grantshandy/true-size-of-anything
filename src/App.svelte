@@ -43,7 +43,7 @@
 
   const addPlace = (place: Place) => {
     if (!map) return;
-    name;
+
     const randomHue = Math.floor(Math.random() * 360);
     const saturation = 70;
     const value = 50;
@@ -143,5 +143,5 @@
 
 <div class="flex grow flex-col gap-4 md:grid md:grid-cols-3">
   <Search onResult={addBoundary} bind:error />
-  <div use:mapAction class="h-full w-full cursor-pointer md:col-span-2"></div>
+  <div use:mapAction class="overflow-none rounded-box h-full w-full cursor-pointer md:col-span-2"></div>
 </div>
