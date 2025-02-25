@@ -5,10 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/app.css" rel="stylesheet" />
-    <title>True Size of Things</title>
+    <title>True Size of Anything</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="flex min-h-screen w-full flex-col space-y-6 p-4">
+    <h1 class="text-3xl">True Size of Anything</h1>
+
+    <p class="leading-8">
+      Inspired by
+      <a href="https://www.thetruesize.com" class="link italic" target="_blank"
+        >The True Size Of...</a
+      >, this website lets you accurately compare the size of any region on
+      <a href="https://osm.org" class="link">OpenStreetMap</a>. Search for any
+      place (administrative and legal areas work best) and click the "Add
+      Button". To move regions on the map, drag from the dot
+      <span
+        class="mx-0.5 aspect-square h-3 w-3 rounded-full bg-primary px-3 py-0.5 shadow-lg"
+      ></span> in the region.
+    </p>
+
+    <div id="app" class="flex grow"></div>
+
+    <p class="text-right text-sm italic">
+      <a href="https://github.com/grantshandy/true-size-of-anything" class="link"
+        >View Source Code</a
+      >
+      &VerticalBar;
+      Copyright &copy; 2025 Grant Handy
+    </p>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

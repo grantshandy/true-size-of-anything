@@ -15,6 +15,10 @@ export type Place = {
     type: string;
     coordinates: number[][][];
   };
+  lat: string;
+  lon: string;
+  // lat/lon bounding box
+  boundingbox: string[];
 };
 
 export const search = (terms: string): Promise<Place[]> =>
